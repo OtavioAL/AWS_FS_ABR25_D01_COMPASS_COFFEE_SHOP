@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-white: #fff;
+  --color-brown: #603809;
+  --font-family-primary: "Playfair Display", serif;
+  --font-family-secondary: "Clicker Script", cursive;
+}
