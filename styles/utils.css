@@ -50,6 +50,7 @@
 .order-now:hover {
   cursor: pointer;
   opacity: 0.8;
+  background-color: #8a623b;
 }
 
 .order-now .order-now-button {
@@ -60,8 +61,4 @@
   font-weight: medium;
   font-family: var(--font-family-primary);
   transition: background-color 0.3s ease;
-}
-
-.order-now .btn-order:hover {
-  background-color: #8a623b;
 }
