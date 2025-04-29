@@ -1,0 +1,116 @@
+#subscribe {
+  width: 100%;
+  margin: 5rem auto 0;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-brown);
+  background-image: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.6) 30%,
+      rgba(0, 0, 0, 0.2) 70%
+    ),
+    url("../assets/images/background-image-coffee.png");
+  height: 374px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.subscribe-container-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.subscribe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.subscribe-title {
+  font-family: var(--font-family-primary);
+  font-size: 3.3rem;
+  font-weight: bold;
+  color: var(--color-white);
+  text-align: left;
+}
+
+.subscribe-text {
+  font-family: var(--font-family-primary);
+  font-size: 1.2rem;
+  color: var(--color-white);
+  max-width: 585px;
+  font-weight: 100;
+  line-height: 34px;
+  text-align: left;
+}
+
+.subscribe-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -80px;
+  position: absolute;
+  right: 100px;
+}
+
+.subscribe-image img {
+  width: 100%;
+  max-width: 526px;
+  max-height: 432px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subscribe-container-input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.subscribe-input {
+  flex: 1;
+  max-width: 505px;
+  height: 66px;
+  background-color: #fff9f1;
+  border: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding: 0 1rem;
+  font-family: var(--font-family-primary);
+  font-size: 1rem;
+  font-weight: 100;
+  color: var(--color-gray);
+}
+
+.subscribe-button {
+  flex: 1;
+  max-width: 150px;
+  height: 66px;
+  background-color: var(--color-yellow);
+  border: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  font-family: var(--font-family-primary);
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-text-button);
+}
+
+.subscribe-button-text {
+  text-decoration: none;
+  color: var(--color-brown);
+  font-weight: bold;
+  font-family: var(--font-family-primary);
+  font-size: 22px;
+}
