@@ -30,6 +30,7 @@
   --color-white: #fff;
   --color-brown: #603809;
   --color-yellow: #f9c06a;
+  --color-gray: #707070;
   --color-text-button: #1e1e1e;
   --font-family-primary: "Playfair Display", serif;
   --font-family-secondary: "Clicker Script", cursive;
@@ -40,7 +41,7 @@
   align-items: center;
   justify-content: center;
   border: none;
-  width: 100px;
+  width: 134px;
   height: 48px;
   background-color: var(--color-yellow);
   border-radius: 24px;
@@ -57,8 +58,8 @@
   text-align: center;
   text-decoration: none;
   color: var(--color-text-button);
-  font-size: 0.87rem;
-  font-weight: medium;
+  font-size: 1rem;
+  font-weight: bold;
   font-family: var(--font-family-primary);
   transition: background-color 0.3s ease;
 }
