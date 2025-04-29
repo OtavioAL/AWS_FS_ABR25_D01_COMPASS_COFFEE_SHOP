@@ -1,0 +1,45 @@
+header {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.container-header {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+.logo-title {
+  color: var(--color-white);
+  font-family: var(--font-family-secondary);
+  font-weight: normal;
+  font-size: 2.2rem;
+}
+
+.menu ul {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-white);
+  font-family: var(--font-family-primary);
+  font-weight: medium;
+  font-size: 0.87rem;
+}
