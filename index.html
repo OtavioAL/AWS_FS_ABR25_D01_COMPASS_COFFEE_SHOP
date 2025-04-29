@@ -23,7 +23,7 @@
 <body>
 
   <header id="header">
-    <div class="container-header">
+    <div class="container-header container">
 
       <div class="logo">
         <a class="logo-link" href="/">
@@ -49,7 +49,7 @@
 
   <main>
     <section id="banner" class="banner">
-      <div class="banner-content">
+      <div class="banner-content container">
         <p class="banner-text">
           We`ve got your morning covered with
         </p>
@@ -66,26 +66,30 @@
     </section>
 
     <section id="description" class="description">
-      <div class="description-content">
-        <h2 class="description-title">Discover the best coffee</h2>
-        <p class="description-text">
-          Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity and helps
-          build your mood. Having a cup of coffee is good, but having a cup of real coffee is greater. There is no doubt
-          that you will enjoy this coffee more than others you have ever tasted.
-        </p>
-        <button class="order-now">
-          <a href="#order" class="order-now-button">Learn More</a>
-        </button>
-      </div>
+      <div class="description-container-content container">
+        <div class="description-content">
+          <h2 class="description-title">Discover the best coffee</h2>
+          <p class="description-text">
+            Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity and
+            helps
+            build your mood. Having a cup of coffee is good, but having a cup of real coffee is greater. There is no
+            doubt
+            that you will enjoy this coffee more than others you have ever tasted.
+          </p>
+          <button class="order-now">
+            <a href="#order" class="order-now-button">Learn More</a>
+          </button>
+        </div>
 
-      <div class="description-image">
-        <img src="/assets/images/cup-coffee.png" alt="image of coffee beans forming a cup">
+        <div class="description-image">
+          <img src="/assets/images/cup-coffee.png" alt="image of coffee beans forming a cup">
+        </div>
       </div>
 
       <img class="description-coffee-blast" src="/assets/images/coffee_blast.png" alt="spilled coffee">
     </section>
 
-    <section id="products">
+    <section id="products" class="products container">
       <h2 class="products-title">Enjoy a new blend of coffee style</h2>
       <p class="products-subtitle">Explore all flavours on our menu with us. There is always a new worth experiencing
       </p>
@@ -152,7 +156,55 @@
 
     </section>
 
-    <section id="table-products"></section>
+    <section id="table-products" class="table-products container">
+      <div class="table-products-container-filters">
+        <button class="order-now">
+          <a href="/" class="order-now-button">All items</a>
+        </button>
+        <button class="order-now-disabled">
+          <a href="/" class="order-now-button">Warm drinks</a>
+        </button>
+        <button class="order-now-disabled">
+          <a href="/" class="order-now-button">Cold drinks</a>
+        </button>
+        <button class="order-now-disabled">
+          <a href="/" class="order-now-button">Snacks</a>
+        </button>
+        <button class="order-now-disabled">
+          <a href="/" class="order-now-button">Dessert</a>
+        </button>
+      </div>
+
+      <div class="table-container">
+        <table class="table-content">
+          <thead class="table-header">
+            <tr class="table-header-row">
+              <th class="table-header-item">Item</th>
+              <th class="table-header-item">Tipo</th>
+              <th class="table-header-item">Preço</th>
+            </tr>
+          </thead>
+
+          <tbody class="table-body">
+            <tr class="table-body-row">
+              <td class="table-body-item">Vanilla Late</td>
+              <td class="table-body-item">Warm drink</td>
+              <td class="table-body-item">R$ 3,99</td>
+            </tr>
+            <tr class="table-body-row">
+              <td class="table-body-item">Vanilla Late</td>
+              <td class="table-body-item">Warm drink</td>
+              <td class="table-body-item">R$ 3,99</td>
+            </tr>
+            <tr class="table-body-row">
+              <td class="table-body-item">Vanilla Late</td>
+              <td class="table-body-item">Warm drink</td>
+              <td class="table-body-item">R$ 3,99</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
     <section id="call-to-action"></section>
 
