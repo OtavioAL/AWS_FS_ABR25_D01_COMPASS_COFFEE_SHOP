@@ -9,6 +9,10 @@
   background-color: var(--color-white);
   position: relative;
   min-height: 80vh;
+
+  @media screen and (max-height: 700px) {
+    min-height: 100vh;
+  }
 }
 
 .description-content {
