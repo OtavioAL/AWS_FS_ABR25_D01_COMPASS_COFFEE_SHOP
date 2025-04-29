@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Clicker Script";
-  src: url("./fonts/ClickerScript/ClickerScript-Regular.woff2") format("woff2");
+  src: url("./fonts/ClickerScript-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -29,6 +29,8 @@
 :root {
   --color-white: #fff;
   --color-brown: #603809;
+  --color-yellow: #f9c06a;
+  --color-text-button: #1e1e1e;
   --font-family-primary: "Playfair Display", serif;
   --font-family-secondary: "Clicker Script", cursive;
 }
