@@ -95,3 +95,12 @@
   position: relative;
   bottom: -40px;
 }
+
+@media (max-width: 800px) {
+  #products {
+    min-height: auto;
+  }
+  .products-list-cards {
+    display: none;
+  }
+}

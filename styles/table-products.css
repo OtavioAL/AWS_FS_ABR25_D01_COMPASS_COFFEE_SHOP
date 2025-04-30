@@ -64,3 +64,19 @@
   color: var(--color-beige-light);
   /* text-align: center; */
 }
+
+@media (max-width: 800px) {
+  #table-products {
+    overflow-x: auto;
+  }
+
+  .table-content {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+  }
+
+  .table-products-container-filters {
+    flex-wrap: wrap;
+  }
+}

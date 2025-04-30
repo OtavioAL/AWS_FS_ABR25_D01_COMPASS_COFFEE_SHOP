@@ -121,3 +121,15 @@
   border-radius: 1rem;
   object-fit: cover;
 }
+
+@media (max-width: 800px) {
+  .feedbacks-title {
+    text-align: center;
+  }
+  .feedbacks-coffee-blast-left {
+    display: none;
+  }
+  .feedbacks-coffee-blast-right {
+    display: none;
+  }
+}
