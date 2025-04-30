@@ -114,3 +114,16 @@
   font-family: var(--font-family-primary);
   font-size: 22px;
 }
+
+@media (max-width: 800px) {
+  .subscribe-content {
+    align-items: center;
+  }
+  .subscribe-container-input {
+    align-items: center;
+    justify-content: center;
+  }
+  .subscribe-image {
+    display: none;
+  }
+}

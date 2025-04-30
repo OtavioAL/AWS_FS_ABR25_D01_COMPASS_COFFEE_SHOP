@@ -67,3 +67,34 @@
   bottom: -20px;
   left: -3%;
 }
+
+@media (max-width: 800px) {
+  #description {
+    min-height: 50vh;
+    flex-direction: column;
+  }
+  .description-image {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  #description {
+    min-height: 60vh;
+    flex-direction: column;
+  }
+  .description-image {
+    display: none;
+  }
+}
+
+@media (max-height: 860px) and (max-width: 800px) {
+  #description {
+    min-height: 60vh;
+  }
+}
+@media (max-width: 478px) {
+  #description {
+    min-height: 80vh;
+  }
+}
