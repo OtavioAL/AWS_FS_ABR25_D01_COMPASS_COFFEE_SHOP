@@ -74,6 +74,7 @@
 }
 .table-body-row {
   border-bottom: 1px solid #442808;
+  font-family: var(--font-family-tertiary);
 }
 
 @media (max-width: 800px) {
