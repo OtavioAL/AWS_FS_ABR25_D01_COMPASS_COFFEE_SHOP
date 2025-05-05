@@ -25,18 +25,18 @@
 
   <header id="header">
     <div class="container-header container">
-
       <div class="logo">
         <a class="logo-link" href="/">
           <p class="logo-title">Bean Scene</p>
         </a>
       </div>
 
-      <button class="menu-toggle" aria-label="Abrir Menu">
+      <button class="menu-toggle" id="menuToggle" aria-label="open mobile menu">
         ☰
       </button>
 
-      <nav class="menu">
+      <nav class="menu" id="menu">
+        <button class="close-btn" id="closeBtn" aria-label="Fechar menu mobile">&times;</button>
         <ul class="menu-list">
           <li class="menu-item"><a href="#home">Home</a></li>
           <li class="menu-item"><a href="#menu">Menu</a></li>
@@ -48,7 +48,6 @@
       <button class="order-now">
         <a href="#order" class="order-now-button">Order Now</a>
       </button>
-
     </div>
   </header>
 
@@ -100,84 +99,12 @@
       </p>
 
       <div class="products-list-cards">
-
-        <div class="products-card">
-          <img class="products-card-image" src="/assets/images/coffee.png" alt="image of types coffee">
-          <div class="products-card-informations">
-            <h3 class="products-card-title">Cappuccino</h3>
-            <p class="products-card-text">Coffee 35% | Milk 65%</p>
-            <p class="products-card-price">R$ 2,50</p>
-            <div class="products-card-button-order-now">
-              <button class="order-now">
-                <a href="/" class="order-now-button">Order Now</a>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="products-card">
-          <img class="products-card-image" src="/assets/images/coffee.png" alt="image of types coffee">
-          <div class="products-card-informations">
-            <h3 class="products-card-title">Cappuccino</h3>
-            <p class="products-card-text">Coffee 35% | Milk 65%</p>
-            <p class="products-card-price">R$ 2,50</p>
-            <div class="products-card-button-order-now">
-              <button class="order-now">
-                <a href="/" class="order-now-button">Order Now</a>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="products-card">
-          <img class="products-card-image" src="/assets/images/coffee.png" alt="image of types coffee">
-          <div class="products-card-informations">
-            <h3 class="products-card-title">Cappuccino</h3>
-            <p class="products-card-text">Coffee 35% | Milk 65%</p>
-            <p class="products-card-price">R$ 2,50</p>
-            <div class="products-card-button-order-now">
-              <button class="order-now">
-                <a href="/" class="order-now-button">Order Now</a>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="products-card">
-          <img class="products-card-image" src="/assets/images/coffee.png" alt="image of types coffee">
-          <div class="products-card-informations">
-            <h3 class="products-card-title">Cappuccino</h3>
-            <p class="products-card-text">Coffee 35% | Milk 65%</p>
-            <p class="products-card-price">R$ 2,50</p>
-            <div class="products-card-button-order-now">
-              <button class="order-now">
-                <a href="/" class="order-now-button">Order Now</a>
-              </button>
-            </div>
-          </div>
-        </div>
-
       </div>
 
     </section>
 
     <section id="table-products" class="table-products container">
       <div class="table-products-container-filters">
-        <button class="order-now">
-          <a href="/" class="order-now-button">All items</a>
-        </button>
-        <button class="order-now-disabled">
-          <a href="/" class="order-now-button">Warm drinks</a>
-        </button>
-        <button class="order-now-disabled">
-          <a href="/" class="order-now-button">Cold drinks</a>
-        </button>
-        <button class="order-now-disabled">
-          <a href="/" class="order-now-button">Snacks</a>
-        </button>
-        <button class="order-now-disabled">
-          <a href="/" class="order-now-button">Dessert</a>
-        </button>
       </div>
 
       <div class="table-container">
@@ -190,23 +117,7 @@
             </tr>
           </thead>
 
-          <tbody class="table-body">
-            <tr class="table-body-row">
-              <td class="table-body-item">Vanilla Late</td>
-              <td class="table-body-item">Warm drink</td>
-              <td class="table-body-item">R$ 3,99</td>
-            </tr>
-            <tr class="table-body-row">
-              <td class="table-body-item">Vanilla Late</td>
-              <td class="table-body-item">Warm drink</td>
-              <td class="table-body-item">R$ 3,99</td>
-            </tr>
-            <tr class="table-body-row">
-              <td class="table-body-item">Vanilla Late</td>
-              <td class="table-body-item">Warm drink</td>
-              <td class="table-body-item">R$ 3,99</td>
-            </tr>
-          </tbody>
+          <tbody class="table-body"></tbody>
         </table>
       </div>
     </section>
@@ -233,71 +144,23 @@
       <h2 class="feedbacks-title">Our coffee perfection feedback</h2>
       <p class="feedbacks-subtitle">Our customers has amazing things to say about us</p>
 
-      <img class="feedbacks-coffee-blast-right" src="/assets/images/coffee_blast_feedbacks.png" alt="spilled coffee">
+      <img class="feedbacks-coffee-blast-right" src="/assets/images/coffee_blast_feedbacks.png" alt="spilled coffee"
+        loading="lazy">
 
       <div class="feedbacks-container-content container glider-contain">
         <div class="glider">
-
-          <div class="feedbacks-card ">
-            <p class="feedbacks-text-highlight">“</p>
-
-            <p class="feedbacks-text">
-              This café has become my sanctuary. Whether it’s the smooth espresso to start my day or the cozy
-              environment
-              that helps me focus during meetings, this place has it all. The staff is friendly, and the atmosphere is
-              perfect for getting things done or taking a relaxing break. I highly recommend it to anyone looking for a
-              great cup of coffee and a space that makes work feel just a little bit easier.
-            </p>
-
-            <p class="feedbacks-text-name-user">
-              Jonny Thomas
-            </p>
-
-            <p class="feedbacks-text-user-profession">
-              Project Manager
-            </p>
-
-            <div class="feedbacks-container-image-user">
-              <img class="feedbacks-image-user" src="/assets/images/image-user.png" alt="image of a user">
-            </div>
-          </div>
-
-          <div class="feedbacks-card ">
-            <p class="feedbacks-text-highlight">“</p>
-
-            <p class="feedbacks-text">
-              This café has become my sanctuary. Whether it’s the smooth espresso to start my day or the cozy
-              environment
-              that helps me focus during meetings, this place has it all. The staff is friendly, and the atmosphere is
-              perfect for getting things done or taking a relaxing break. I highly recommend it to anyone looking for a
-              great cup of coffee and a space that makes work feel just a little bit easier.
-            </p>
-
-            <p class="feedbacks-text-name-user">
-              Jonny Thomas
-            </p>
-
-            <p class="feedbacks-text-user-profession">
-              Project Manager
-            </p>
-
-            <div class="feedbacks-container-image-user">
-              <img class="feedbacks-image-user" src="/assets/images/image-user.png" alt="image of a user">
-            </div>
-          </div>
         </div>
         <button class="glider-prev">
-          <img src="/assets/images/arrow-left.png" alt="arrow to move the carousel to the left">
+          <img src="/assets/images/arrow-left.png" alt="arrow to move the carousel to the left" loading="lazy">
         </button>
         <button class="glider-next">
-          <img src="/assets/images/arrow-right.png" alt="arrow to move the carousel to the right">
+          <img src="/assets/images/arrow-right.png" alt="arrow to move the carousel to the right" loading="lazy">
         </button>
-        <!-- <div role="tablist" class="dots"></div> -->
       </div>
 
 
-      <img class="feedbacks-coffee-blast-left" src="/assets/images/coffee_blast_feedbacks_left.png"
-        alt="spilled coffee">
+      <img class="feedbacks-coffee-blast-left" src="/assets/images/coffee_blast_feedbacks_left.png" alt="spilled coffee"
+        loading="lazy">
     </section>
 
     <section id="subscribe">
@@ -308,15 +171,18 @@
             Don’t miss out on our latest news, updates, tips and special offers
           </p>
 
-          <div class="subscribe-container-input">
-            <input class="subscribe-input" type="email" placeholder="Enter your email">
-            <button class="subscribe-button">
-              <a href="/" class="subscribe-button-text">Subscribe</a>
+          <form class="subscribe-container-input">
+            <input class="subscribe-input" type="email" placeholder="Enter your email" required>
+            <button class="subscribe-button" type="submit">
+              Subscribe
             </button>
-          </div>
+          </form>
+
+          <p class="subscribe-message"></p>
+
         </div>
         <div class="subscribe-image">
-          <img src="/assets/images/pngwing.png" alt="image of coffee beans forming a cup">
+          <img src="/assets/images/pngwing.png" alt="image of coffee beans forming a cup" loading="lazy">
         </div>
       </div>
     </section>
@@ -336,16 +202,16 @@
 
         <div class="footer-container-social-media">
           <a href="/">
-            <img src="/assets/images/facebook.png" alt="facebook icon">
+            <img src="/assets/images/facebook.png" alt="facebook icon" loading="lazy">
           </a>
           <a href="/">
-            <img src="/assets/images/instagram.png" alt="instagram icon">
+            <img src="/assets/images/instagram.png" alt="instagram icon" loading="lazy">
           </a>
           <a href="/">
-            <img src="/assets/images/youtube.png" alt="youtube icon">
+            <img src="/assets/images/youtube.png" alt="youtube icon" loading="lazy">
           </a>
           <a href="/">
-            <img src="/assets/images/twitter.png" alt="twitter icon">
+            <img src="/assets/images/twitter.png" alt="twitter icon" loading="lazy">
           </a>
         </div>
       </div>
@@ -388,8 +254,7 @@
   </footer>
 
   <script src="libs/glider.min.js"></script>
-  <script src="scripts/carousel.js"></script>
-  <script src="scripts/index.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 </body>
 
 </html>
