@@ -66,6 +66,7 @@
   padding: 2rem;
   position: relative;
   margin-bottom: 3rem;
+  max-width: 1400px;
 }
 
 .feedbacks-text-highlight {
