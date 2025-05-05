@@ -65,20 +65,6 @@ header {
   text-decoration: underline;
 }
 
-.order-now {
-  background: none;
-  border: none;
-}
-
-.order-now-button {
-  background-color: var(--color-yellow);
-  padding: 0.8rem 1.6rem;
-  border-radius: 4px;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-}
-
 .close-btn {
   display: none;
 }
