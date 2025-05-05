@@ -21,8 +21,29 @@
 
 @font-face {
   font-family: "Clicker Script";
-  src: url("./fonts/ClickerScript-Regular.ttf") format("ttf");
+  src: url("./fonts/ClickerScript/ClickerScript-Regular.ttf") format("ttf");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -38,6 +59,7 @@
   --color-text-button: #1e1e1e;
   --font-family-primary: "Playfair Display", serif;
   --font-family-secondary: "Clicker Script", cursive;
+  --font-family-tertiary: "Roboto", sans-serif;
 }
 
 .container {
