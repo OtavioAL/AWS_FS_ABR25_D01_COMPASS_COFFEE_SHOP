@@ -46,3 +46,11 @@
     align-items: center;
   }
 }
+@media (max-width: 600px) {
+  .banner-text {
+    font-size: 16.5px;
+  }
+  .banner-text-highlight {
+    font-size: 165px;
+  }
+}

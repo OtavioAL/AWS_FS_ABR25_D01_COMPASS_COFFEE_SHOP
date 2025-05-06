@@ -125,18 +125,6 @@
   object-fit: cover;
 }
 
-@media (max-width: 800px) {
-  .feedbacks-title {
-    text-align: center;
-  }
-  .feedbacks-coffee-blast-left {
-    display: none;
-  }
-  .feedbacks-coffee-blast-right {
-    display: none;
-  }
-}
-
 .glider {
   margin: 0 auto;
 }
@@ -191,4 +179,28 @@
 
 .glider-dot.active {
   background-color: #333;
+}
+
+@media (max-width: 800px) {
+  .feedbacks-title {
+    text-align: center;
+  }
+  .feedbacks-coffee-blast-left {
+    display: none;
+  }
+  .feedbacks-coffee-blast-right {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .feedbacks-title {
+    font-size: 40.5px;
+    text-align: center;
+  }
+
+  .feedbacks-subtitle {
+    text-align: center;
+    font-size: 15px;
+  }
 }
