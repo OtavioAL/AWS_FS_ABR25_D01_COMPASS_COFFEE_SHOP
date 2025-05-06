@@ -122,3 +122,16 @@
   cursor: pointer;
   opacity: 0.8;
 }
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 40.5px !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 478px) {
+  .title {
+    font-size: 30px !important;
+  }
+}

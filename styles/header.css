@@ -69,6 +69,15 @@ header {
   display: none;
 }
 
+#header .order-now {
+  width: 100px;
+  height: 48px;
+}
+
+#header .order-now .order-now-button {
+  font-size: 14px;
+}
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -114,7 +123,7 @@ header {
     cursor: pointer;
   }
 
-  .order-now {
+  #header .order-now {
     display: none;
   }
 }
