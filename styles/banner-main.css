@@ -33,6 +33,16 @@
   margin-bottom: 1rem;
 }
 
+.initial {
+  font-size: 22px;
+  font-weight: medium;
+}
+
+.description-banner {
+  font-size: 20px;
+  font-weight: 200;
+}
+
 .banner-text-highlight {
   font-family: var(--font-family-secondary);
   font-size: 13rem;
