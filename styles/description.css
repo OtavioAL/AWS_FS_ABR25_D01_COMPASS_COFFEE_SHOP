@@ -106,6 +106,17 @@
   }
 }
 
+@media (max-width: 1100px) and (max-height: 650px) {
+  #description {
+    min-height: 130vh;
+  }
+}
+
+@media (max-height: 600px) and (max-width: 800px) {
+  #description {
+    min-height: 100vh !important;
+  }
+}
 @media (max-height: 860px) and (max-width: 800px) {
   #description {
     min-height: 60vh;
@@ -120,5 +131,11 @@
 @media (max-width: 478px) {
   #description {
     min-height: 80vh;
+  }
+}
+
+@media (max-width: 380px) {
+  .description-coffee-blast {
+    display: none;
   }
 }
