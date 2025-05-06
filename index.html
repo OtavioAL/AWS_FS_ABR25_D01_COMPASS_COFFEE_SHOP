@@ -11,33 +11,250 @@
   <meta property="og:url" content="https://meusite.com/">
   <title>Coffee Shop</title>
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="libs/glider.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
 
-  <header></header>
+  <header id="header">
+    <div class="container-header container">
+      <div class="logo">
+        <a class="logo-link" href="/">
+          <p class="logo-title">Bean Scene</p>
+        </a>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="open mobile menu">
+        ☰
+      </button>
+
+      <nav class="menu" id="menu">
+        <button class="close-btn" id="closeBtn" aria-label="Fechar menu mobile">&times;</button>
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#home">Home</a></li>
+          <li class="menu-item"><a href="#menu">Menu</a></li>
+          <li class="menu-item"><a href="#about-us">About Us</a></li>
+          <li class="menu-item"><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="order-now">
+        <a href="#order" class="order-now-button">Order Now</a>
+      </button>
+    </div>
+  </header>
 
   <main>
+    <section id="banner" class="banner">
+      <div class="banner-content container">
+        <p class="banner-text">
+          We`ve got your morning covered with
+        </p>
+        <h2 class="banner-text-highlight">Coffee</h2>
+        <p class="banner-text">
+          It is best to start your day with a cup of coffee. Discover the
+          best flavours coffee you will ever have. We provide the best
+          for our customers.
+        </p>
+        <button class="order-now">
+          <a href="#order" class="order-now-button">Order Now</a>
+        </button>
+      </div>
+    </section>
 
-    <section id="banner"></section>
+    <section id="description" class="description">
+      <div class="description-container-content container">
+        <div class="description-content">
+          <h2 class="description-title title">Discover the best coffee</h2>
+          <p class="description-text">
+            Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity and
+            helps
+            build your mood. Having a cup of coffee is good, but having a cup of real coffee is greater. There is no
+            doubt
+            that you will enjoy this coffee more than others you have ever tasted.
+          </p>
+          <button class="order-now">
+            <a href="#order" class="order-now-button">Learn More</a>
+          </button>
+        </div>
 
-    <section id="description"></section>
+        <div class="description-image">
+          <img src="/assets/images/cup-coffee.png" alt="image of coffee beans forming a cup">
+        </div>
+      </div>
 
-    <section id="products"></section>
+      <img class="description-coffee-blast" src="/assets/images/coffee_blast.png" alt="spilled coffee">
+    </section>
 
-    <section id="table-products"></section>
+    <section id="products" class="products container">
+      <h2 class="products-title title">Enjoy a new blend of coffee style</h2>
+      <p class="products-subtitle">Explore all flavours on our menu with us. There is always a new worth experiencing
+      </p>
 
-    <section id="call-to-action"></section>
+      <div class="products-list-cards">
+      </div>
 
-    <section id="feedbacks"></section>
+    </section>
 
-    <section id="subscribe"></section>
+    <section id="table-products" class="table-products container">
+      <div class="table-products-container-filters">
+      </div>
+
+      <div class="table-container">
+        <table class="table-content">
+          <thead class="table-header">
+            <tr class="table-header-row">
+              <th class="table-header-item">Item</th>
+              <th class="table-header-item">Tipo</th>
+              <th class="table-header-item">Preço</th>
+            </tr>
+          </thead>
+
+          <tbody class="table-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="call-to-action">
+      <div class="call-to-action-container-content container">
+        <div class="call-to-action-content container">
+          <h2 class="call-to-action-title title">Get a chance to have an Amazing morning</h2>
+          <p class="call-to-action-text">
+            We are giving you are one time opportunity to experience a better life with coffee.
+          </p>
+          <button class="order-now">
+            <a href="#order" class="order-now-button">Order Now</a>
+          </button>
+        </div>
+
+        <div class="call-to-action-image">
+          <img src="/assets/images/cup.png" alt="image of a coffee cup">
+        </div>
+      </div>
+    </section>
+
+    <section id="feedbacks">
+      <h2 class="feedbacks-title title">Our coffee perfection feedback</h2>
+      <p class="feedbacks-subtitle">Our customers has amazing things to say about us</p>
+
+      <img class="feedbacks-coffee-blast-right" src="/assets/images/coffee_blast_feedbacks.png" alt="spilled coffee"
+        loading="lazy">
+
+      <div class="feedbacks-container-content container glider-contain">
+        <div class="glider">
+        </div>
+        <button class="glider-prev">
+          <img src="/assets/images/arrow-left.png" alt="arrow to move the carousel to the left" loading="lazy">
+        </button>
+        <button class="glider-next">
+          <img src="/assets/images/arrow-right.png" alt="arrow to move the carousel to the right" loading="lazy">
+        </button>
+      </div>
+
+
+      <img class="feedbacks-coffee-blast-left" src="/assets/images/coffee_blast_feedbacks_left.png" alt="spilled coffee"
+        loading="lazy">
+    </section>
+
+    <section id="subscribe">
+      <div class="subscribe-container-content container">
+        <div class="subscribe-content">
+          <h2 class="subscribe-title title">Subscribe to get offers!</h2>
+          <p class="subscribe-text">
+            Don’t miss out on our latest news, updates, tips and special offers
+          </p>
+
+          <form class="subscribe-container-input">
+            <input class="subscribe-input" type="email" placeholder="Enter your email" required>
+            <button class="subscribe-button" type="submit">
+              Subscribe
+            </button>
+          </form>
+
+          <p class="subscribe-message"></p>
+
+        </div>
+        <div class="subscribe-image">
+          <img src="/assets/images/pngwing.png" alt="image of coffee beans forming a cup" loading="lazy">
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <footer></footer>
+  <footer id="footer">
+    <div class="footer-container-content container">
+      <div class="footer-content" style="flex: 2;">
+        <p class="logo-title">Bean Scene</p>
 
-  <script src="scripts/index.js"></script>
+        <p class="footer-text">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+          make a type specimen book.
+        </p>
+
+        <div class="footer-container-social-media">
+          <a href="/">
+            <img src="/assets/images/facebook.png" alt="facebook icon" loading="lazy">
+          </a>
+          <a href="/">
+            <img src="/assets/images/instagram.png" alt="instagram icon" loading="lazy">
+          </a>
+          <a href="/">
+            <img src="/assets/images/youtube.png" alt="youtube icon" loading="lazy">
+          </a>
+          <a href="/">
+            <img src="/assets/images/twitter.png" alt="twitter icon" loading="lazy">
+          </a>
+        </div>
+      </div>
+      <div class="footer-content">
+        <h3 class="footer-title">About</h3>
+
+        <ul>
+          <li><a href="/">Menu</a></li>
+          <li><a href="/">Features</a></li>
+          <li><a href="/">News & Blogs</a></li>
+          <li><a href="/">Help & Supports</a></li>
+        </ul>
+
+      </div>
+      <div class="footer-content">
+        <h3 class="footer-title">Company</h3>
+
+        <ul>
+          <li><a href="/">How we work</a></li>
+          <li><a href="/">Terms of service</a></li>
+          <li><a href="/">Pricing</a></li>
+          <li><a href="/">FAQ</a></li>
+        </ul>
+
+      </div>
+
+      <div class="footer-content">
+        <h3 class="footer-title">Contact Us</h3>
+
+        <ul>
+          <li><a href="/">Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016</a></li>
+          <li><a href="/">+1 202-918-2132</a></li>
+          <li><a href="/">beanscene@mail.com</a></li>
+          <li><a href="/">www.beanscene.com</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="libs/glider.min.js"></script>
+  <script type="module" src="scripts/index.js"></script>
 </body>
 
 </html>

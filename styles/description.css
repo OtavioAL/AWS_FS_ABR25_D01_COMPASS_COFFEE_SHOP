@@ -1,0 +1,124 @@
+#description {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-white);
+  position: relative;
+  min-height: 80vh;
+
+  @media screen and (max-height: 700px) {
+    min-height: 100vh;
+  }
+}
+
+.description-container-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between !important;
+  gap: 1rem;
+}
+
+.description-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}
+
+.description-title {
+  font-family: var(--font-family-primary);
+  font-size: 3.3rem;
+  font-weight: bold;
+  color: var(--color-brown);
+  text-align: left;
+}
+
+.description-text {
+  font-family: var(--font-family-primary);
+  font-size: 1.2rem;
+  color: var(--color-gray);
+  max-width: 585px;
+  line-height: 34px;
+  text-align: left;
+  font-weight: 200;
+}
+
+.description-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.description-image img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 484px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description-coffee-blast {
+  position: absolute;
+  bottom: -20px;
+  left: -3%;
+}
+
+@media (max-width: 800px) {
+  #description {
+    min-height: 50vh;
+    flex-direction: column;
+  }
+  .description-image {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .description-title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .description-text {
+    text-align: justify;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  #description {
+    min-height: 60vh;
+    flex-direction: column;
+  }
+  .description-image {
+    display: none;
+  }
+}
+@media (max-width: 1100px) and (max-height: 700px) {
+  #description {
+    min-height: 110vh;
+  }
+}
+
+@media (max-height: 860px) and (max-width: 800px) {
+  #description {
+    min-height: 60vh;
+  }
+}
+
+@media (max-width: 478px) and (min-height: 800px) {
+  #description {
+    min-height: 60vh !important;
+  }
+}
+@media (max-width: 478px) {
+  #description {
+    min-height: 80vh;
+  }
+}

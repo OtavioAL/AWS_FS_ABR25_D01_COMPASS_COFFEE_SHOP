@@ -21,14 +21,117 @@
 
 @font-face {
   font-family: "Clicker Script";
-  src: url("./fonts/ClickerScript/ClickerScript-Regular.woff2") format("woff2");
+  src: url("./fonts/ClickerScript/ClickerScript-Regular.ttf") format("ttf");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 
 :root {
   --color-white: #fff;
   --color-brown: #603809;
+  --color-yellow: #f9c06a;
+  --color-red: #dc4939;
+  --color-green: rgb(84, 220, 42);
+  --color-beige-dark: #ffeed8;
+  --color-beige-light: #968162;
+  --color-gray: #707070;
+  --color-text-button: #1e1e1e;
   --font-family-primary: "Playfair Display", serif;
   --font-family-secondary: "Clicker Script", cursive;
+  --font-family-tertiary: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1400px;
+}
+
+.order-now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 134px;
+  height: 48px;
+  background-color: var(--color-yellow);
+  border-radius: 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.order-now:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: #8a623b;
+}
+
+.order-now .order-now-button {
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-text-button);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-family-primary);
+  transition: background-color 0.3s ease;
+}
+
+.order-now-disabled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 134px;
+  height: 48px;
+  background-color: transparent;
+  border-radius: 24px;
+  border: 1px solid var(--color-yellow);
+}
+
+.order-now-disabled .order-now-button {
+  text-align: center;
+  text-decoration: none;
+  color: #aa8558;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--font-family-primary);
+  transition: background-color 0.3s ease;
+}
+
+.order-now-disabled:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 40.5px !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 478px) {
+  .title {
+    font-size: 30px !important;
+  }
 }
